@@ -1,4 +1,4 @@
-# PCComponentes-de-hacendado
+# PCComponentes de Hacendado
 
 Proyecto realizado para la asignatura de PWM
 
