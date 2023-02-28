@@ -1,8 +1,13 @@
 p{
     color:white;
-    margin-left: 1em;
 }
 
+.p-margin{
+    margin-left: 1em;
+}
+h6{
+    color:white;
+}
 .img-middle{
     vertical-align: middle;
     margin-right:1em
