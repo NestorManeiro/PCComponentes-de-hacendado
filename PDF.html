@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="h-100" lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="bg-dark d-flex flex-column h-100">
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="JS/javascript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--JS-->
+  <header><script>include("header", "Componentes/navbar.html")</script></header>
+
+  <main class=".bg-dark">
+    <table style="margin-left: 15%;">
+        <tr>
+          <td>
+            <div class="opciones_cuenta">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-left: 25%;">
+                  <li class="nav-item"><a class="nav-link active" href="#"><h5 style="color:white">Mi cuenta</h5></a></li>
+                  <li class="nav-item" style="margin-left: 1%;"><a class="nav-link" href="Mis_Datos.html" style="color:white">Mis datos</a></li>
+                  <li class="nav-item" style="margin-left: 1%;"><a class="nav-link" href="Opiniones.html" style="color:white">Opiniones</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><h5 style="color:white">Pedidos y devoluciones</h5></a></li>
+                  <li class="nav-item" style="margin-left: 1%;"><a class="nav-link" href="PDF.html" style="color:white">Pedidos, devoluciones y facturas</a></li>
+                  <li class="nav-item" style="margin-left: 1%;"><a class="nav-link" href="Pedidos_Cancelados.html" style="color:white">Pedidos cancelados</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><h5 style="color:white">Pago</h5></a></li>
+                  <li class="nav-item" style="margin-left: 1%;"><a class="nav-link" href="Tarjetas_Vinculadas.html" style="color:white">Tarjetas vinculadas</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="input-group mb-3" style="margin-left:57%; width: 300px;">
+                <input type="text" class="form-control" placeholder="Buscar pedidos..." aria-label="Recipient's username" aria-describedby="button-wrapping" style="background-color:#212529; color: #A7C3BC; width: 100px;">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="Img/lupa.png" alt="" width="20px"></button>
+                
+            </div>
+            
+            <div class="primera_caja" style="border-color: #A7C3BC; border-width: 1px; border-style: solid; width: 700px; ">
+                <details style="color: white;">
+                    <summary>
+                        <strong>Realizado:</strong> 27/09/2020|1 artículo
+                        <br>
+                        <strong>Nº de pedido:</strong> 32020510344
+                        <a href="#" style="text-decoration: none; color: #B86707; margin-left: 39%;"><img src="Img/icono_folio.png" alt="" style="margin-right: 5px; margin-bottom: 1%;">Detalles de pedido</a>
+                    </summary>
+                    <div class="segunda_caja" style="border-color: #A7C3BC; border-width: 1px; border-top-style: solid;">
+                        <p><strong>Entrega:</strong> <font color="#B86707">completo</font></p>
+                        <p>Feca: 27/12/2020</p>
+                        <!--ya puedo mover todo de sitio-->
+                    </div>
+                    <div class="tercera_caja" style="border-color: #A7C3BC; border-width: 1px; border-top-style: solid;">
+                      <table style="margin-right: 50%;">
+                        <tr>
+                          <td><img src="Img/opinion_prueba.png" alt="" style="width: 150px;"></td>
+                          <td>
+                            <p style="color: #B86707;">Cooler Maser MasterLiquid Lite 240</p>
+                            <p>48,62€ x 1 unidad</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <button type="button" class="btn btn-outline-warning" style="color: #B86707; border-color: #B86707; outline-color: #B86707;">Valorar</button>
+                            <button type="button" class="btn btn-outline-warning" style="color: #B86707; border-color: #B86707; outline-color: #B86707;">Devolver producto</button>
+                          </td>
+                        </tr>
+                      </table> 
+                    </div>
+                </details>
+            </div>
+            
+          </td>
+        </tr>
+    </table>
+  </main>
+  
+  <!-- Footer -->
+  <footer><script>include("footer", "Componentes/footer.html")</script></footer>
+  
+  
+</body>
+
+</html>
