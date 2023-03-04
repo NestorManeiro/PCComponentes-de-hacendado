@@ -1,0 +1,165 @@
+p, a , div, table,th,td{
+    color:white;
+}
+
+.p-margin{
+    margin-left: 1em;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    color:white;
+}
+
+.title-color{
+    color:#0d6efd;
+}
+.img-middle{
+    vertical-align: middle;
+    margin-right:1em
+  }
+
+.mt-5 {
+    margin-top: 5em !important;
+  }
+
+  .mt-2 {
+    margin-top: 2em !important;
+  }
+
+  .ml-2 {
+    margin-left: 2em !important;
+  }
+  .mr-2 {
+    margin-right: 2em !important;
+  }
+  .mr-5 {
+    margin-right: 5em !important;
+  }
+  .mb-2 {
+    margin-bottom: 2em !important;
+  }
+
+  .carousel-control-prev-icon{
+    background-color: #A7C3BC;
+  }
+
+  .carousel-control-next-icon{
+    background-color: #A7C3BC;
+  }
+  .carousel-item{
+    margin-top: 10%;
+    margin-left: 40%;
+    right:60px;
+    width: 500px;
+    height: 500px;
+  }
+  
+  #carusel1{
+    margin-top:16%;
+    margin-left: 47%;
+  }
+  #carusel3{
+    margin-top:16%;
+    margin-left: 47%;
+  }
+  
+  #carusel1{
+    margin-left: 47%;
+  }
+  
+  #carouselExampleDark{
+    bottom:15%;
+  }
+  
+  .Categorias_Tendencia{
+    margin-left: 7em;
+  }
+  td{
+    padding: 20px;
+    
+  }
+  .opciones_cuenta{
+    width: 400px;
+    height: 500px;
+  }
+  .contenedor_derecha{
+    background-color: #1F2223;
+    border-radius: 5%;
+    margin-bottom: 29%;
+    width: 700px;
+    height: 300px;
+  }
+  .tarjeta_Perfil{
+    position:relative;
+    margin-left: 100%;
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+  }
+  .datos_cuenta ::placeholder{
+    color: #A7C3BC;
+  }
+  .input-group ::placeholder{
+    color: #A7C3BC;
+  }
+  .datos_cuenta{
+    margin-left: 40%;
+    display: table;
+  }
+  .Titulo{
+    display: table-caption;
+    text-align: left;
+    width: 550px;
+  }
+  .heading{
+    display: table-row;
+    text-align: left;
+  }
+  .fila{
+    display: table-row;
+    text-align: right;
+  }
+  .cell{
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .estrellas {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  .estrellas p {
+    text-align: center;
+  }
+  
+  .estrellas label {
+    font-size: 20px;
+  }
+  
+  .clasificacion input[type="radio"] {
+    display: none;
+  }
+  
+  .clasificacion label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  .clasificacion label:hover,label:hover ~ label {
+    color: orange;
+  }
+  
+  .clasificacion input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  .ul-unstyled {
+    list-style-type: none;
+  }
