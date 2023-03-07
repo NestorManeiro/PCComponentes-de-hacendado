@@ -29,24 +29,25 @@
   <header><script>include("header", "Componentes/navbar.html")</script></header>
 
   <!-- Main -->
-  <main class=".bg-dark">
-
+  <main class=".bg-dark container">
     <div class="d-flex justify-content-center">
       <!--Left-->
       <div class="mr-5 mt-5">
         <h3 class="text-highlight text-center">¿No tienes una cuenta?</h3> <br> <br>
-        <div class="d-flex"><img src="Img/historial.png" alt="Componentes">
+        <div class="d-flex"><img src="Img/historial.png" class="icon" alt="Componentes">
           <h4>Guarda el historial de tus compras</h4>
         </div> <br> <br>
-        <div class="d-flex"><img src="Img/carrito2.png" alt="Componentes">
+        <div class="d-flex"><img src="Img/carrito2.png" class="icon" alt="Componentes">
           <h4>Guarda tu carrito entre distintas sesiones</h4>
         </div> <br> <br>
-        <div class="d-flex"><img src="Img/estrella.png" alt="Componentes">
+        <div class="d-flex"><img src="Img/estrella.png" class="icon"  alt="Componentes">
           <h4>Realiza reseñas de los productos</h4>
         </div> <br> <br>
+        <div class="d-flex justify-content-center">
+        <form action="/registro.html"><button id="btnregistrarse" type="submit" class="btn btn-outline-warning orange-button">Registrarse</button></form>
+        </div>
+      </div>        
 
-        <form action="/registro.html"><button type="submit" class="btn btn-outline-warning orange-button w-25">Registrarse</button></form>
-      </div>
       <!--Right-->
       <div class="border-start row position-relative mt-5">
 
@@ -62,8 +63,8 @@
         </div>
 
         <!--Down-->
-        <div class="border-top justify-content-center d-flex ml-2 ,t">
-          <form class="ml-2 mt-2 w-50">
+        <div class="border-top justify-content-center d-flex ml-2">
+          <form class="ml-2 mt-2">
             <div class="mb-3">
               <p>Correo electronico</p>
               <input type="email" class="form-control" id="e-mail" placeholder="name@example.com">
@@ -73,7 +74,7 @@
               <input type="password" class="form-control" id="pwd" placeholder="******">
             </div>
             <div class="d-flex justify-content-center">
-              <button type="enviar" class="btn btn-outline-warning orange-button">Enviar</button>
+              <button type="enviar" class="btn btn-outline-warning orange-button ">Enviar</button>
             </div>
           </form>
 
