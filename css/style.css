@@ -2,6 +2,10 @@ p, a , div, table,th,td{
     color:white;
 }
 
+.text-highlight{
+  text-decoration: none; 
+  color: #B86707; 
+}
 .p-margin{
     margin-left: 1em;
 }
@@ -11,6 +15,12 @@ h4, h5, h6 {
     color:white;
 }
 
+.orange-button{
+  color: #B86707; 
+  border-color: #B86707; 
+  outline-color: #B86707; 
+  margin-top: 15px;
+}
 .title-color{
     color:#0d6efd;
 }
@@ -29,6 +39,9 @@ h4, h5, h6 {
 
   .ml-2 {
     margin-left: 2em !important;
+  }
+  .ml-20 {
+    margin-left: 20em !important;
   }
   .mr-2 {
     margin-right: 2em !important;
@@ -162,4 +175,8 @@ h4, h5, h6 {
   }
   .ul-unstyled {
     list-style-type: none;
+  }
+
+  .text-end{
+    text-align: end;
   }
