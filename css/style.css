@@ -180,3 +180,19 @@ h4, h5, h6 {
   .text-end{
     text-align: end;
   }
+
+  .Categorias_Tendencia2{
+    display: none;
+  }
+  @media screen and (max-width: 430px) {
+    .Categorias_Tendencia{
+      display: none;
+    }
+    .Categorias_Tendencia2{
+      display: grid;
+    }
+    .Fotos_Categorias img{
+      width: 150px;
+      height: 150px;
+    }
+  }
