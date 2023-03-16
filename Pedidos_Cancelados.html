@@ -27,7 +27,7 @@
   <!--JS-->
   <header><script>include("header", "Componentes/navbar.html")</script></header>
   <main class=".bg-dark">
-    <table style="margin-left: 15%;">
+    <table class="tabla_principal">
         <tr>
           <td>
             <div class="opciones_cuenta">
@@ -45,7 +45,7 @@
           </td>
             <td>
                 <h2>Pedidos cancelados</h2>
-                <div class="primera_caja" style="border-color: #A7C3BC; border-width: 1px; border-style: solid; width: 700px; margin-bottom: 10%;">
+                <div class="primera_caja">
                     <details style="color: white;">
                         <summary style="margin-right: 95%;">
                             <div class="datos_cuenta">
@@ -67,33 +67,16 @@
                                 </div>
                                 </div> 
                         </summary>
-                        <div class="segunda_caja" style="border-color: #A7C3BC; border-width: 1px; border-top-style: solid; ">
-                            <div class="datos_cuenta">
-                                <div class="heading">
-                                    <div class="cell">
-                                    <p><strong>Motivo de cancelación:</strong> <font style="color: #B86707;">Eliminado por el cliente</font> </p>
-                                    </div>
-                                    <div class="cell">
-                                    <a href="#" style="text-decoration: none; color: #B86707; margin-left: 75%;"><img src="Img/icono_folio.png" alt="" style="margin-right: 5px; margin-bottom: 1%;">Detalles de pedido</a>
-                                    </div>
-                                </div>
-                                <div class="fila">
-                                    <div class="cell">
-                                    <p></a><img src="Img/discoduro.png" alt=""> Seagate Barracuda 3.5" 1TB SATA3</p>
-                                    </div>
-                                    <div class="cell">
-                                    <p>33.6€ x 1 Unidad(es)</p>
-                                    </div>
-                                </div>
-                                <div class="fila">
-                                    <div class="cell">
-                                    <p><img src="Img/wifi.png" alt=""> TP-Link Archer T6E Adaptador PCI Express Dual Band AC1300</p>
-                                    </div>
-                                    <div class="cell">
-                                    <p>32.71€ x 1 Unidad(es)</p>
-                                    </div>
-                                </div> 
-                            </div>  
+                        <div class="segunda_caja" >
+                          <p><strong>Motivo de cancelación:</strong> <font style="color: #B86707;">Eliminado por el cliente</font> <a href="#" id="detalles_pedido"><img src="Img/icono_folio.png" alt="" style="margin-right: 5px; margin-bottom: 1%;">Detalles de pedido</a></p>
+                          <div class="imagen">
+                            <p></a><img src="Img/discoduro.png" alt=""> Seagate Barracuda 3.5" 1TB SATA3</p>
+                            <p>33.6€ x 1 Unidad(es)</p>
+                          </div> 
+                          <div class="imagen">
+                            <p><img src="Img/wifi.png" alt=""> TP-Link Archer T6E Adaptador PCI Express Dual Band AC1300</p>
+                            <p>32.71€ x 1 Unidad(es)</p>  
+                          </div>
                         </div>
                     </details>
                 </div>

@@ -129,6 +129,10 @@ h4, h5, h6 {
     display: table-row;
     text-align: left;
   }
+  .heading_opiniones{
+    display: table-row;
+    text-align: left;
+  }
   .fila{
     display: table-row;
     text-align: right;
@@ -184,7 +188,60 @@ h4, h5, h6 {
   .Categorias_Tendencia2{
     display: none;
   }
-  @media screen and (max-width: 430px) {
+
+  .Contenido_central{
+    margin: auto;
+  }
+  .caja_usuario_mobil{
+    display: none;
+  }
+  #tres_puntos{
+    padding-left: 50em;
+  }
+  .tarjeta{
+    background-color: #B86707; 
+    border-radius: 5%; 
+    width: 350px; 
+    height: 250px; 
+    margin-bottom: 40%;
+  }
+  .tabla_principal{
+    margin: 0 23em auto;
+  }
+  .heading_opiniones .cell_mobil{
+    display: none;
+  }
+  .primera_caja{
+    border-color: #A7C3BC;
+    border-width: 1px; 
+    border-style: solid; 
+    width: 700px;
+  }
+  .primera_caja .summary1 a{
+    text-decoration: none;
+    margin-left: 20em;
+    color: #B86707;
+  }
+  .tabla_principal .input-group{
+    display: flex;
+    margin: 0 0 0 auto;
+    width: 300px;
+  }
+
+  .segunda_caja{
+    border-color: #A7C3BC; 
+    border-width: 1px; 
+    border-top-style: solid;
+  }
+  .segunda_caja .imagen{
+    margin: 1em 1em auto;
+  }
+  #detalles_pedido{
+    text-decoration: none;
+    color: #B86707;
+    margin-left: 11em;
+  }
+  @media screen and (max-width: 600px) {
     .Categorias_Tendencia{
       display: none;
     }
@@ -195,4 +252,79 @@ h4, h5, h6 {
       width: 150px;
       height: 150px;
     }
+    .opciones_cuenta{
+      display: none;
+    }
+    .caja_usuario{
+      display: none;
+    }
+
+    .caja_usuario_mobil{
+      display: initial;
+      margin: auto;
+      text-align: center;
+    }
+    .tarjeta_Perfil{
+      margin: auto;
+      text-align: start;
+    }
+    .contenedor_derecha{
+      width: 300px;
+      height: 450px;
+    }
+    .cell{
+      display: table-row;
+      margin-right: 100%;
+    }
+    .heading{
+      display: table-cell;
+    }
+    .heading_opiniones{
+      display: table-row;
+      text-align: left;
+    }
+    .heading_opiniones .cell{
+      display:none;
+    }
+    .heading_opiniones .cell_mobil{
+      display: initial;
+    }
+    .fila2{
+      display: table-row;
+    }
+    .datos_cuenta{
+     margin: 0 6em auto;
+    }
+    .Titulo{
+      display: table-caption;
+      width: 50%;
+    }
+    #tres_puntos{
+      padding-left: 5em;
+    }
+    .tabla_principal{
+      margin: auto;
+    }
+    #imagen_opinion{
+      display: flex;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    .tabla_principal .input-group{
+      margin: 0 0 auto;
+      width: 300px;
+    }
+    .primera_caja{
+      margin: auto;
+      width: 300px;
+    }
+    .primera_caja .summary1 a{
+      display: flex;
+      margin-left: 0;
+    }
+    #detalles_pedido{
+      display: flex;
+      margin-left: 0;
+    }
+
   }
