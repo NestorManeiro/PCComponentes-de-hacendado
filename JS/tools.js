@@ -56,4 +56,3 @@ function continuar(id){
     }
     
 }
-
