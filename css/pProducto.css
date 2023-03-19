@@ -370,7 +370,7 @@ h6{
 
 .direccion{
     display: flex;
-    width: 60%;
+
     border: 2px solid black;
 }
 
@@ -386,6 +386,7 @@ h6{
 
 #prueba2{
     width: 29%;
+    padding-left: 5%;
 
 }
 
@@ -479,13 +480,63 @@ h6{
     
 }
 
+.transformable-movil{
+    min-width: 5%;
+}
+
 /*fin css tablas colapsables */
 
-#div-pGrande{
-    display:none
+main{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
+
+/*Cosas para el diseño responsibe */
+
+
+
+#div-pGrande{
+    display:initial;
+}
+#div-pGrande-movil{
+    display: none;
+}
+
 @media screen and (max-width: 768px){
-    #españa{
+    #div-pGrande{
         display: none;
     }
+    #div-pGrande-movil{
+        display:initial;
+    }
+
+
+    /*Pasarela pago */
+    /*Paso 2 */
+    #prueba2{
+        width: 29%;
+        padding-left: 0%;
+    }
+
+    .right{
+        float: none;
+    }
+
 }
+
+.container_col{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1.5rem;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.container_col_direction{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1.5rem;
+    border: 2px solid black;
+}
+

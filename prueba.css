@@ -81,3 +81,8 @@
     
     
 }
+
+.cell{
+    display:table-row;
+    border: 1px solid #098163;
+}

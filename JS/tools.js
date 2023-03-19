@@ -11,6 +11,10 @@ function mostrar_features(){
     mostrar(features);
 }
 
+function toc(){
+    console.log("Hola");
+}
+
 function mostrar_comments(){
     ocultar(features);
     ocultar(questions);
@@ -31,8 +35,6 @@ function mostrar_questions(){
     ocultar(videos);
     mostrar(questions);
 }
-
-
 
 
 function continuar(id){
@@ -56,3 +58,4 @@ function continuar(id){
     }
     
 }
+
