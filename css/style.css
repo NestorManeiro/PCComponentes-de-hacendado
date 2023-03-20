@@ -240,7 +240,11 @@ td{
   color: #B86707;
   margin-left: 11em;
 }
-@media screen and (max-width: 600px) {
+
+#imagen_pdf{
+  width: 150px;
+}
+@media screen and (max-width: 1000px) {
   .Categorias_Tendencia{
     display: none;
   }
@@ -324,6 +328,9 @@ td{
   #detalles_pedido{
     display: flex;
     margin-left: 0;
+  }
+  #imagen_pdf{
+    width: 100px;
   }
 
 }

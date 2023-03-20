@@ -61,3 +61,13 @@ function continuar(id){
 
 }
 
+var request = new XMLHttpRequest();
+request.open('GET', 'json/usuario.json');
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+  var datos = request.response;
+  var miParrafo = document.getElementById('product-name');
+  miParrafo.innerHTML = 'Nombre: ' + datos.nombre;
+};
