@@ -329,6 +329,8 @@ h2:after {
     display: none;
 }
 
+
+
 h5{
     color: #A7C3BC;
 }
@@ -368,7 +370,7 @@ h6{
 
 .direccion{
     display: flex;
-    width: 60%;
+
     border: 2px solid black;
 }
 
@@ -384,10 +386,157 @@ h6{
 
 #prueba2{
     width: 29%;
+    padding-left: 5%;
 
 }
 
 #lineas{
     border-bottom: 1px dashed #A7C3BC ;
+}
+
+
+/*css de tablas colapsables */
+.wrapper {
+    display: flexbox;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.collapsible{
+    max-width: 410px;
+    overflow: hidden;
+    font-weight: 500;
+
+
+}
+
+.collapsible input{
+    display: none;
+}
+
+.collapsible label{
+    position:relative;
+    font-weight: 600;
+    font-size: 12px;
+    color: #A7C3BC;
+    display: block;
+    margin-bottom: 10px;
+    height: 22px;
+    cursor: pointer;
+    padding-left: 5px;
+    border-bottom: 2px solid #A7C3BC;
+    z-index: 1;
+    background-color: rgb(52, 58, 64); 
+
+}
+
+.collapsible label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: -5px;
+    width: 25px;
+    height: 27px;
+    background: url(/Img/Keyboard\ arrow\ down.png);
+    background-size: auto;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label:after{
+    transform: rotate(180deg);
+}
+
+.collapsible-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position:relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    
+}
+
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 100%;
+    padding-bottom: 25px;
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #A7C3BC;
+    
+}
+
+.collapsible-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #A7C3BC
+    
+    
+}
+
+.transformable-movil{
+    min-width: 5%;
+}
+
+/*fin css tablas colapsables */
+
+main{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+/*Cosas para el diseño responsibe */
+
+
+
+#div-pGrande{
+    display:initial;
+}
+#div-pGrande-movil{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    #div-pGrande{
+        display: none;
+    }
+    #div-pGrande-movil{
+        display:initial;
+    }
+
+
+    /*Pasarela pago */
+    /*Paso 2 */
+    #prueba2{
+        width: 29%;
+        padding-left: 0%;
+    }
+
+    .right{
+        float: none;
+    }
+
+}
+
+.container_col{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1.5rem;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.container_col_direction{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1.5rem;
+    border: 2px solid black;
 }
 
