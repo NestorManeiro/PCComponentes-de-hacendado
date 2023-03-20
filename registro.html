@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-dark d-flex flex-column h-100">
-  <!--Bootstrap-->
+  <!--JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -23,8 +23,9 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
   <script src="JS/javascript.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--Bootstrap-->
+  <!--JS-->
 
   <header>
     <script>include("header", "Componentes/navbar.html")</script>
@@ -39,48 +40,54 @@
     </div>
     <div class=" container d-flex mt-2 justify-content-center border-top">
       <div class="w-25 mt-2">
-        <form action="" class="was-validated">
+        <form id="form" action="/login.html" class="" method="GET" requied>
           <div class="mb-3">
             <p>Correo electronico</p>
-            <input type="email" class="form-control is-invalid" id="e-mail" placeholder="name@example.com" required>
+            <input type="email" class="form-control" id="e-mail" placeholder="name@example.com">
             <div class="invalid-feedback">
               Porfavor introduzca un email valido
             </div>
           </div>
           <div class="mb-3">
             <p>Contraseña</p>
-            <input type="password" class="form-control is-invalid" id="pwd" placeholder="********" required>
+            <input type="password" maxlength="15" class="form-control" id="pwd" placeholder="********" required>
             <div class="invalid-feedback">
-              La contraseña necesita tener minimo un numero y una mayuscula
+              La contraseña necesita tener minimo un numero, una mayuscula y un caracter especial(@#$%&*)
             </div>
           </div>
           <div class="mb-3">
             <p>Repetir contraseña</p>
-            <input type="password" class="form-control is-invalid" id="rpwd" placeholder="********" required>
+            <input type="password" maxlength="15" class="form-control" id="rpwd" placeholder="********" required>
             <div class="invalid-feedback">
               Las contraseñas tienen que ser iguales
             </div>
           </div>
           <div class="mb-3">
             <p>Nombre</p>
-            <input type="text" class="form-control is-invalid" id="name" placeholder="Name" required>
+            <input type="text" maxlength="10" class="form-control" id="name" placeholder="Name " required>
           </div>
           <div class="mb-3">
             <p>Apellidos</p>
-            <input type="text" class="form-control is-invalid" id="lastname" placeholder="Last Name" required>
+            <input type="text" maxlength="20" class="form-control" id="lastname" placeholder="Last Name" required>
           </div>
           <div class="mb-3">
             <p>Dirección</p>
-            <input type="text" class="form-control is-invalid" id="direction" placeholder="Direction" required>
+            <input type="text" maxlength="20" class="form-control" id="direction" placeholder="Direction" required>
           </div>
           <div class="mb-3">
             <p>Codigo Postal</p>
-            <input type="number" class="form-control is-invalid" id="postalcode" placeholder="Postal Code" required>
+            <input id="zip" name="zip" class="form-control" type="text" pattern="[0-9]*" required>
+            <div class="invalid-feedback">
+              Solo valores numericos
+            </div>
           </div>
           <div class="d-flex justify-content-center">
-            <button type="enviar" class="btn btn-outline-warning orange-button">Enviar</button>
+            <button type="submit" class="btn btn-outline-warning orange-button">Enviar</button>
           </div>
         </form>
+        <!--Validation-->
+        <script src="JS/formvalidation.js"></script>
+        <!--Validation-->
       </div>
     </div>
   </main>

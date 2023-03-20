@@ -1,3 +1,16 @@
+const pwd = document.getElementById("pwd");
+const rpwd = document.getElementById("rpwd");
+const form = document.getElementById("form");
+var passw=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!"#$%&'()*+,-.\/:;<=>?\\@[\]^_`{|}~]).{6,64}$/;;
+
+form.addEventListener("submit", (e) => {
+
+    if(pwd.value.match(passw)){
+        pwd.classList.remove("is-invalid");
+    }
+    else{
+        e.preventDefault();
+        pwd.classList.add("is-invalid");} 
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"
 import { auth } from './FirebaseAuth.js'
 import { showToast } from './Toastify.js'

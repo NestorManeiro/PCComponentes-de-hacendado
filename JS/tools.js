@@ -13,7 +13,11 @@ function mostrar_features() {
     mostrar(features);
 }
 
-function mostrar_comments() {
+function toc(){
+    console.log("Hola");
+}
+
+function mostrar_comments(){
     ocultar(features);
     ocultar(questions);
     ocultar(videos);
@@ -35,9 +39,7 @@ function mostrar_questions() {
 }
 
 
-
-
-function continuar(id) {
+function continuar(id){
     var div_cest = document.getElementById('cest');
     var div_shipment_directions = document.getElementById('shipment-directions');
     var div_delivery_options = document.getElementById('delivery-options');
