@@ -1,0 +1,169 @@
+[
+  {
+    "componente": "Procesador",
+    "modelo": "Intel Core i7-11700K 3.6Ghz",
+    "precio": 469
+  },
+  {
+    "componente": "Procesador",
+    "modelo": "Intel Core i9-11900K 3.5Ghz",
+    "precio": 619
+  },
+  {
+    "componente": "Procesador",
+    "modelo": "AMD Ryzen 7 5800X 3.8Ghz",
+    "precio": 439
+  },
+  {
+    "componente": "Procesador",
+    "modelo": "AMD Ryzen 9 5950X 3.4Ghz",
+    "precio": 999
+  },
+
+  {
+    "componente": "Placa Base",
+    "modelo": "MSI Z590-A PRO",
+    "precio": 189
+  },
+  {
+    "componente": "Placa Base",
+    "modelo": "ASUS ROG Strix Z590-E",
+    "precio": 349
+  },
+  {
+    "componente": "Placa Base",
+    "modelo": "Gigabyte AORUS Z590 MASTER",
+    "precio": 599
+  },
+  {
+    "componente": "Placa Base",
+    "modelo": "ASRock Z590 Taichi",
+    "precio": 369
+  },
+
+  {
+    "componente": "RAM",
+    "modelo": "Corsair Vengeance RGB Pro 16GB",
+    "precio": 99
+  },
+  {
+    "componente": "RAM",
+    "modelo": "G.Skill Trident Z RGB 32GB",
+    "precio": 249
+  },
+  {
+    "componente": "RAM",
+    "modelo": "Kingston HyperX Fury 64GB",
+    "precio": 499
+  },
+  {
+    "componente": "RAM",
+    "modelo": "Crucial Ballistix 128GB",
+    "precio": 1299
+  },
+
+  {
+    "componente": "Caja",
+    "modelo": "NZXT H510",
+    "precio": 79
+  },
+  {
+    "componente": "Caja",
+    "modelo": "Corsair iCUE 220T RGB",
+    "precio": 109
+  },
+  {
+    "componente": "Caja",
+    "modelo": "Lian Li PC-O11 Dynamic",
+    "precio": 169
+  },
+  {
+    "componente": "Caja",
+    "modelo": "Fractal Design Meshify",
+    "precio": 89
+  },
+
+  {
+    "componente": "Refrigeracion CPU",
+    "modelo": "Noctua NH-D15",
+    "precio": 99
+  },
+  {
+    "componente": "Refrigeracion CPU",
+    "modelo": "Corsair iCUE H150i Elite Capellix",
+    "precio": 199
+  },
+  {
+    "componente": "Refrigeracion CPU",
+    "modelo": "be quiet! Dark Rock Pro 4",
+    "precio": 89
+  },
+  {
+    "componente": "Refrigeracion CPU",
+    "modelo": "NZXT Kraken X73 RGB",
+    "precio": 179
+  },
+
+  {
+    "componente": "Disco duro",
+    "modelo": "Seagate Barracuda 2TB",
+    "precio": 57
+  },
+  {
+    "componente": "Disco duro",
+    "modelo": "Samsung 970 EVO Plus 1TB",
+    "precio": 189
+  },
+  {
+    "componente": "Disco duro",
+    "modelo": "Western Digital Black SN850 2TB",
+    "precio": 429
+  },
+  {
+    "componente": "Disco duro",
+    "modelo": "Crucial MX500 2TB",
+    "precio": 219
+  },
+
+  {
+    "componente": "Fuente de alimentacion",
+    "modelo": "EVGA Supernova 750 G5",
+    "precio": 129
+  },
+  {
+    "componente": "Fuente de alimentacion",
+    "modelo": "Corsair RM850x",
+    "precio": 149
+  },
+  {
+    "componente": "Fuente de alimentacion",
+    "modelo": "Seasonic Focus GX-850",
+    "precio": 139
+  },
+  {
+    "componente": "Fuente de alimentacion",
+    "modelo": "be quiet! Straight Power 11 850W",
+    "precio": 149
+  },
+
+  {
+    "componente": "Tarjeta grafica",
+    "modelo": "Nvidia GeForce RTX 3060 Ti",
+    "precio": 549
+  },
+  {
+    "componente": "Tarjeta grafica",
+    "modelo": "AMD Radeon RX 6700 XT",
+    "precio": 649
+  },
+  {
+    "componente": "Tarjeta grafica",
+    "modelo": "Nvidia GeForce RTX 3080",
+    "precio": 1199
+  },
+  {
+    "componente": "Tarjeta grafica",
+    "modelo": "AMD Radeon RX 6900 XT",
+    "precio": 1399
+  }
+]
