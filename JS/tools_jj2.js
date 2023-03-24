@@ -1,10 +1,6 @@
-function include(tag, file) {
-    $(tag).load(file);
-}
-
-const carousel = document.querySelector(".carousel"),
+const carousel = document.querySelector(".carousel2"),
 firstImg = carousel.querySelectorAll("img")[0],
-arrowIcons = document.querySelectorAll(".wrapper i");
+arrowIcons = document.querySelectorAll(".wrapper2 i");
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
@@ -75,6 +71,3 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
-
-/*separador*/ 
-
