@@ -19,6 +19,41 @@ body {
     background: #343F4F;
 }
 
+
+.carousel-control-prev-icon {
+    background-color: #A7C3BC;
+  }
+  
+  .carousel-control-next-icon {
+    background-color: #A7C3BC;
+  }
+  
+  .carousel-item {
+    margin-top: 10%;
+    margin-left: 40%;
+    right: 60px;
+    width: 500px;
+    height: 500px;
+  }
+  
+  #carusel1 {
+    margin-top: 16%;
+    margin-left: 47%;
+  }
+  
+  #carusel3 {
+    margin-top: 16%;
+    margin-left: 47%;
+  }
+  
+  #carusel1 {
+    margin-left: 47%;
+  }
+  
+  #carouselExampleDark {
+    bottom: 15%;
+  }
+
 .wrapper {
     display: flex;
     max-width: 1200px;
