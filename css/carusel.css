@@ -14,7 +14,6 @@ h1,h2,h3,h4,h5,p,a{
 }
 
 body {
-    display: grid;
     padding: 0 35px;
     min-height: 100vh;
     background: #343F4F;
@@ -98,12 +97,13 @@ body {
 }
 
 .Categorias_Tendencia{
-    position: relative;
     display: grid;
+    position: relative;
     justify-content: space-between;
-    margin: auto;
+    margin: 0 0 auto;
     padding: 5em;
     margin-top: 5em;
+    justify-content: center;
 }
 
 .Fotos_Categorias img{
