@@ -1,8 +1,9 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,p,a{
     color: white;
+    text-decoration: none;
 }
 
 * {
@@ -19,41 +20,6 @@ body {
     background: #343F4F;
 }
 
-
-.carousel-control-prev-icon {
-    background-color: #A7C3BC;
-  }
-  
-  .carousel-control-next-icon {
-    background-color: #A7C3BC;
-  }
-  
-  .carousel-item {
-    margin-top: 10%;
-    margin-left: 40%;
-    right: 60px;
-    width: 500px;
-    height: 500px;
-  }
-  
-  #carusel1 {
-    margin-top: 16%;
-    margin-left: 47%;
-  }
-  
-  #carusel3 {
-    margin-top: 16%;
-    margin-left: 47%;
-  }
-  
-  #carusel1 {
-    margin-left: 47%;
-  }
-  
-  #carouselExampleDark {
-    bottom: 15%;
-  }
-
 .wrapper {
     display: flex;
     max-width: 1200px;
@@ -61,6 +27,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 20em;
+    padding: 5em;
 }
 
 .wrapper i {
@@ -130,9 +98,12 @@ body {
 }
 
 .Categorias_Tendencia{
+    position: relative;
     display: grid;
     justify-content: space-between;
     margin: auto;
+    padding: 5em;
+    margin-top: 5em;
 }
 
 .Fotos_Categorias img{
@@ -144,7 +115,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .carousel img {
         width: calc(40% / 2);
     }
@@ -160,6 +131,8 @@ body {
     .Categorias_Tendencia2 {
         display: grid;
         margin: 0 0 auto;
+        padding: 5em;
+        margin-top: 5em;
 
     }
 
@@ -188,6 +161,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 20em;
+    padding: 5em;
 }
 
 .wrapper2 i {
@@ -256,3 +231,84 @@ body {
     
 }
 
+.footer_jj{
+    display: grid;
+    margin: auto;
+    margin-top: 20em;
+}
+.contenedor_footer{
+    border-top: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-container{
+    display: gird;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+.carousel_head{
+    display: grid;
+    align-items: center;
+    width: 700px;
+    border-radius: 9px;
+    box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.35);
+    position: relative;
+    margin: auto;
+}
+
+.carousel-images{
+    display: flex;
+    overflow:hidden;
+    border-radius: 11px;
+    text-align: center;
+}
+
+.carousel-image{
+    transition: all .9s;
+    width: 700px;
+    transform: translateX(0);
+}
+
+.carousel-image img{
+    max-width: 700px;
+}
+.btn-left,
+.btn-right{
+    
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    position: absolute;
+    cursor:pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    opacity: 1;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+}
+
+.btn-left{
+    top: 50%;
+    left: -3rem;
+    margin: 0 0 auto;
+    transform: translateY(-50%);
+}
+.btn-right{
+    top: 50%;
+    right: -3rem;
+    transform: translateY(-50%);
+}
+
+.icon-left,
+.icon-right{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.75);
+}

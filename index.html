@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html class="h-100" lang="es">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>index</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="css/carusel.css">
+  <script src="JS/javascript.js"></script>
   <script src="JS/tools_JJ.js" defer></script>
+  
+
 </head>
 
-<body class="bg-dark d-flex flex-column h-100">
-  <!--JS-->
+<body class="bg-dark">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -23,56 +26,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--JS-->
-  <header><script>include("header", "Componentes/navbar.html")</script></header>
 
-  <main class=".bg-dark container">
 
-  </main>
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color:#A7C3BC"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" style="background-color:#A7C3BC"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" style="background-color:#A7C3BC"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="Img/ordenadores-gaming-mas-baratos-1.webp" class="d-block w-100" alt="imagen_1">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
+  <header>
+    <script>include("header", "Componentes/navbar.html")</script>
+  </header>
+
+  <section class="carousel-container">
+      <div class="carousel_head"> 
+          <div class="carousel-images">
+              <img class="carousel-image carousel-image-1"src="Img/ordenadores-gaming-mas-baratos-1.webp" alt="">
+              <img class="carousel-image carousel-image-2"src="Img/iphone-mas-barato-1-2.webp" alt="">
+              <img class="carousel-image carousel-image-3"src="Img/Mejores-portatiles-gaming.jpg" alt="">
+          </div>
+          <button class="carousel-btn btn-left" id="previous"><i class="fa-solid fa-chevron-left icon-left"></i></button>
+          <button class="carousel-btn btn-right" id="next"><i class="fa-solid fa-chevron-right icon-right"></i></button>
       </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="Img/iphone-mas-barato-1-2.webp" class="d-block w-100" alt="imagen_2">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Ipone</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="Img/Mejores-portatiles-gaming.jpg" class="d-block w-100" alt="imagen_3">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true" ></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
 
   <div class="wrapper">
     <i id="left" class="fa-solid fa-angle-left"></i>
-    <div class="carousel-Services">
+    <div class="carousel">
       <img src="Img/promociones.webp" alt="img" draggable="false">
       <img src="Img/ranking-1.webp" alt="img" draggable="false">
       <img src="Img/reacondicionados.webp" alt="img" draggable="false">
@@ -89,63 +65,63 @@
   <div class="Categorias_Tendencia">
     <h3>Categorias en tendentia</h3>
     <table class="Fotos_Categorias">
-        <tr>
-            <td><img src="Img/48bc159800cd3075bf6261c46bcbd35f.png" alt="Portatiles" width="200" height="200"/></td>
-            <td><img src="Img/32f54376ebacea5aa6bc537c3b8cbe1d.png" alt="Sillas" width="200" height="200"/></td>
-            <td><img src="Img/83a354d007b5f3db0d4d72b5a6e8fd62.png" alt="Sobremesa" width="200" height="200"/></td>
-            <td><img src="Img/86b2d8ad9099cee0d4704c5f4017b232.png" alt="Smartphone" width="200" height="200"/></td>
-            <td><img src="Img/88aab98558cdc118fd0b40476f0e7876.png" alt="Auriculares" width="200" height="200"/></td>
-            <td><img src="Img/familia-televisores-500x500-producto.webp" alt="Televisores" width="200" height="200"/></td>
-            <td><img src="Img/id-fam-43.webp" alt="Auriculares" width="200" height="200"/></td>
-        </tr>
+      <tr>
+        <td><img src="Img/48bc159800cd3075bf6261c46bcbd35f.png" alt="Portatiles" width="200" height="200" /></td>
+        <td><img src="Img/32f54376ebacea5aa6bc537c3b8cbe1d.png" alt="Sillas" width="200" height="200" /></td>
+        <td><img src="Img/83a354d007b5f3db0d4d72b5a6e8fd62.png" alt="Sobremesa" width="200" height="200" /></td>
+        <td><img src="Img/86b2d8ad9099cee0d4704c5f4017b232.png" alt="Smartphone" width="200" height="200" /></td>
+        <td><img src="Img/88aab98558cdc118fd0b40476f0e7876.png" alt="Auriculares" width="200" height="200" /></td>
+        <td><img src="Img/familia-televisores-500x500-producto.webp" alt="Televisores" width="200" height="200" /></td>
+        <td><img src="Img/id-fam-43.webp" alt="Auriculares" width="200" height="200" /></td>
+      </tr>
     </table>
   </div>
+
   <div class="Categorias_Tendencia2">
     <h3>Categorias en tendentia</h3>
     <table class="Fotos_Categorias">
-            <tr>
-              <td><img src="Img/48bc159800cd3075bf6261c46bcbd35f.png" alt="Portatiles" width="200" height="200"/></td> 
-              <td><img src="Img/32f54376ebacea5aa6bc537c3b8cbe1d.png" alt="Sillas" width="200" height="200"/></td>
-            </tr>
-            <tr>
-              <td><img src="Img/83a354d007b5f3db0d4d72b5a6e8fd62.png" alt="Sobremesa" width="200" height="200"/></td>
-              <td><img src="Img/86b2d8ad9099cee0d4704c5f4017b232.png" alt="Smartphone" width="200" height="200"/></td>
-            </tr>
+      <tr>
+        <td class="izq"><img src="Img/48bc159800cd3075bf6261c46bcbd35f.png" alt="Portatiles" width="200" height="200" />
+        </td>
+        <td class="drc"><img src="Img/32f54376ebacea5aa6bc537c3b8cbe1d.png" alt="Sillas" width="200" height="200" />
+        </td>
+      </tr>
+      <tr>
+        <td class="izq"><img src="Img/83a354d007b5f3db0d4d72b5a6e8fd62.png" alt="Sobremesa" width="200" height="200" />
+        </td>
+        <td class="drc"><img src="Img/86b2d8ad9099cee0d4704c5f4017b232.png" alt="Smartphone" width="200" height="200" />
+        </td>
+      </tr>
 
-            <tr>
-              <td><img src="Img/88aab98558cdc118fd0b40476f0e7876.png" alt="Auriculares" width="200" height="200"/></td>
-              <td><img src="Img/familia-televisores-500x500-producto.webp" alt="Televisores" width="200" height="200"/></td>
-            </tr>
-            <tr>
-              <td><img src="Img/id-fam-43.webp" alt="Auriculares" width="200" height="200"/></td>
-            </tr>
-            
+      <tr>
+        <td class="izq"><img src="Img/88aab98558cdc118fd0b40476f0e7876.png" alt="Auriculares" width="200"
+            height="200" /></td>
+        <td class="drc"><img src="Img/familia-televisores-500x500-producto.webp" alt="Televisores" width="200"
+            height="200" /></td>
+      </tr>
+      <tr>
+        <td class="izq"><img src="Img/id-fam-43.webp" alt="Auriculares" width="200" height="200" /></td>
+      </tr>
+
     </table>
+
   </div>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div id="carusel1" class="carousel-item active">
-          <img src="Img/logos-partners-asus-1-2.webp" class="d-block w-50" alt="...">
-        </div>
-        <div id="carusel2" class="carousel-item">
-          <img src="Img/1024px-hp-logo-2012-1.webp" class="d-block w-50" alt="...">
-        </div>
-        <div id="carusel3" class="carousel-item">
-          <img src="Img/logitech-logo.webp" class="d-block w-50" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+  <div class="wrapper2">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel2">
+      <img src="Img/1024px-hp-logo-2012-1.webp" alt="img" draggable="false">
+      <img src="Img/chromebook-lockup-color-web-1-1.webp" alt="img" draggable="false">
+      <img src="Img/frame-10867-1.webp" alt="img" draggable="false">
+      <img src="Img/image.webp" alt="img" draggable="false">
+      <img src="Img/image-8.webp" alt="img" draggable="false">
+      <img src="Img/logitech-logo.webp" alt="img" draggable="false">
+      <img src="Img/logos-partners-asus-1-2.webp" alt="img" draggable="false">
+      <img src="Img/path4.webp" alt="img" draggable="false">
     </div>
-    <footer><script>include("footer", "Componentes/footer.html")</script></footer>
-  
-  
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+  <footer><script>include("footer", "Componentes/footer_jj.html")</script></footer>
+
 </body>
 
 </html>
