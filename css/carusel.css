@@ -116,6 +116,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .carousel_head{
+        width: 200px;
+    }
     .carousel img {
         width: calc(40% / 2);
     }
@@ -144,9 +148,19 @@ body {
     .Fotos_Categorias .drc img{
         margin: auto;
     }
+
+    .crousel-images img{
+        width: calc(50% / 2);
+    }
 }
 
 @media screen and (max-width: 550px) {
+    .carousel_head{
+        width: 100%;
+    }
+    .crousel-images img{
+        width: calc(50% / 2);
+    }
     .carousel img {
         width: calc(25% / 2);
     }
