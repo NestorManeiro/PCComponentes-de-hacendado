@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/style.css">
+  <script src="JS/tools_JJ.js" defer></script>
 </head>
 
 <body class="bg-dark d-flex flex-column h-100">
@@ -23,13 +24,16 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
   <script src="JS/javascript.js"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="datos.json"></script>
+
   <!--JS-->
   <header><script>include("header", "Componentes/navbar.html")</script></header>
 
   
-    <main class=".bg-dark container">
-        <table style="margin-left: 15%;">
+    <main class=".bg-dark">
+        <table class="Contenido_central">
           <tr>
             <td>
               <div class="opciones_cuenta">
@@ -51,6 +55,7 @@
                     <tr>
                       <td>
                         <img src="Img/usuario_chido.png" alt="imagen_Usuario" style="margin-left: 5%; margin-bottom:135%;"/>
+                        <p id="datos"></p>
                       </td>
                       <td>
                         <div class="tarjeta_Perfil" style="background-color: #2A2C29;">
