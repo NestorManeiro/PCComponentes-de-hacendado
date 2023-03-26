@@ -73,9 +73,27 @@ request.onload = function() {
     miParrafo = document.getElementById('product-price');
     miParrafo.innerHTML = 'Precio: ' + datos.precio;
     miParrafo = document.getElementById('product-short-description');
-    miParrafo.innerHTML = 'Marca: ' + datos.marca + "Envío:" + datos.envio +
+    miParrafo.innerHTML = 'Marca: ' + datos.marca + "Envío: " + datos.envio +
                         "Financiacion: " + datos.financiacion;
     miParrafo = document.getElementById('p1');
     miParrafo.innerHTML = datos.p1;
+
+    miParrafo = document.getElementById('p2');
+    miParrafo.innerHTML = datos.p2;
+
+    miParrafo = document.getElementById('p3');
+    miParrafo.innerHTML = datos.p3;
+
+    miParrafo = document.getElementById('p4');
+    miParrafo.innerHTML = datos.p4;
+
+    miParrafo = document.getElementById('p5');
+    miParrafo.innerHTML = datos.p5;
+
+    miParrafo = document.getElementById('p6');
+    miParrafo.innerHTML = datos.p6;
+    
+    miParrafo = document.getElementById('p7');
+    miParrafo.innerHTML = datos.p7;
 };
 
