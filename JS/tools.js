@@ -68,6 +68,6 @@ request.send();
 
 request.onload = function() {
   var datos = request.response;
-  var miParrafo = document.getElementById('product-name');
-  miParrafo.innerHTML = 'Nombre: ' + datos.nombre;
+  var miParrafo = document.getElementById('titular');
+  miParrafo.innerHTML = 'Nombre: ' + datos.titular;
 };

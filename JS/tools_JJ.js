@@ -194,13 +194,15 @@ function slideRight(){
 
 
 /*json*/
+
 var request = new XMLHttpRequest();
 request.open('GET', 'json/usuario.json');
 request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  var datos = request.response;
-  var miParrafo = document.getElementById('datos');
-  miParrafo.innerHTML = + datos.Nick;
+    var datos = request.response;
+    var miParrafo = document.getElementById('titular');
+    miParrafo.innerHTML = +datos.titular;
 };
+
