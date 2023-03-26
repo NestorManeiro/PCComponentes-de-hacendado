@@ -163,10 +163,3 @@ request.onload = function() {
     miParrafo = document.getElementById('p7');
     miParrafo.innerHTML = datos.p7;
 };
-
-
-request.onload = function() {
-  var datos = request.response;
-  var miParrafo = document.getElementById('titular');
-  miParrafo.innerHTML = 'Nombre: ' + datos.titular;
-};
