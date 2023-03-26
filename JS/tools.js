@@ -61,3 +61,21 @@ function continuar(id){
 
 }
 
+var request = new XMLHttpRequest();
+request.open('GET', 'json/producto.json');
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+    var datos = request.response;
+    var miParrafo = document.getElementById('product-name');
+    miParrafo.innerHTML = 'Nombre: ' + datos.nombre;
+    miParrafo = document.getElementById('product-price');
+    miParrafo.innerHTML = 'Precio: ' + datos.precio;
+    miParrafo = document.getElementById('product-short-description');
+    miParrafo.innerHTML = 'Marca: ' + datos.marca + "Envío:" + datos.envio +
+                        "Financiacion: " + datos.financiacion;
+    miParrafo = document.getElementById('p1');
+    miParrafo.innerHTML = datos.p1;
+};
+

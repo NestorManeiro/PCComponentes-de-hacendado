@@ -57,3 +57,5 @@ function cambiarClase() {
 cambiarClase(); // Para que se ejecute cuando cargue la página
 
 window.addEventListener('resize', cambiarClase); // Para que se ejecute cada vez que la pantalla cambie de tamaño
+
+
