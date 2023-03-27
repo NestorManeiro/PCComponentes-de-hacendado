@@ -113,59 +113,6 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
-
-    .carousel_head{
-        width: 200px;
-    }
-    .carousel img {
-        width: calc(40% / 2);
-    }
-    .carousel2 img {
-        width: calc(40% / 2);
-    }
-
-    .Categorias_Tendencia {
-        display: none;
-
-    }
-    
-    .Categorias_Tendencia2 {
-        display: grid;
-        margin: 0 0 auto;
-        padding: 5em;
-        margin-top: 5em;
-
-    }
-
-    .Categorias_Tendencia2 img{
-        display: grid;
-        margin-top: 30px;
-    }
-
-    .Fotos_Categorias .drc img{
-        margin: auto;
-    }
-
-    .crousel-images img{
-        width: calc(50% / 2);
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .carousel_head{
-        width: 100%;
-    }
-    .crousel-images img{
-        width: calc(50% / 2);
-    }
-    .carousel img {
-        width: calc(25% / 2);
-    }
-    .carousel2 img {
-        width: calc(25% / 2);
-    }
-}
 .wrapper2 {
     display: flex;
     max-width: 1200px;
@@ -265,7 +212,7 @@ body {
 .carousel_head{
     display: grid;
     align-items: center;
-    width: 700px;
+    max-width: 700px;
     border-radius: 9px;
     box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.35);
     position: relative;
@@ -275,19 +222,18 @@ body {
 .carousel-images{
     display: flex;
     overflow:hidden;
+    max-width: 100%;
     border-radius: 11px;
     text-align: center;
 }
 
 .carousel-image{
     transition: all .9s;
-    width: 700px;
-    transform: translateX(0);
+    max-width: 100%;
+    transform: translateX(0px);
 }
 
-.carousel-image img{
-    max-width: 700px;
-}
+
 .btn-left,
 .btn-right{
     
@@ -326,6 +272,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+    .carousel-image{
+        max-width: 100%;
+    }
     .carousel img {
         width: calc(40% / 2);
     }
@@ -357,13 +306,9 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-    .carousel-head{
-        width: calc(25% / 2);
+    .carousel-image{
+        max-width: 100%;
     }
-    .carousel-images{
-        width: calc(25% / 2);
-    }
-    
     .wrapper i:first-child {
         left: 0px;
         display: none;
@@ -411,3 +356,51 @@ body {
     }
 
 }
+@media screen and (max-width: 1000px) {
+
+    .carousel_head{
+        max-width: 100%;
+    }
+    .carousel img {
+        width: 100px;
+    }
+    .carousel2 img {
+        width: calc(50% / 2);
+    }
+
+    .Categorias_Tendencia {
+        display: none;
+
+    }
+    
+    .Categorias_Tendencia2 {
+        display: grid;
+        margin: 0 0 auto;
+        padding: 5em;
+        margin-top: 5em;
+
+    }
+
+    .Categorias_Tendencia2 img{
+        display: grid;
+        margin-top: 30px;
+    }
+
+    .Fotos_Categorias .drc img{
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: calc(50% / 2);
+        height: calc(50% / 2);
+    }
+    .carousel2 img {
+        width: calc(100% / 2);
+        height: calc(100% / 2);
+    }
+}
+

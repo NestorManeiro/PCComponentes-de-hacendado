@@ -152,7 +152,7 @@ carousel2.addEventListener("touchmove", dragging2);
 document.addEventListener("mouseup", dragStop2);
 carousel2.addEventListener("touchend", dragStop2);
 
-/*Separador*/
+/*Carrusel principal*/
 
 "use strict"
 
@@ -164,6 +164,7 @@ const carouselImage1 = document.querySelector(".carousel-image-1");
 const carouselImage2 = document.querySelector(".carousel-image-2");
 const carouselImage3 = document.querySelector(".carousel-image-3");
 const numberOfImages = document.querySelectorAll(".carousel-image").length;
+const longitud = document.getElementById("imagenes");
 let imageIndex = 1;
 let translateX = 0;
 
@@ -173,7 +174,7 @@ carouselButtonRight.addEventListener("click", slideRight);
 function slideLeft(){
     if (imageIndex !== 1){
         imageIndex--;
-        translateX += 700;
+        translateX += parseInt(getComputedStyle(longitud).width);
         carouselImage1.style.transform = `translateX(${translateX}px)`;
         carouselImage2.style.transform = `translateX(${translateX}px)`;
         carouselImage3.style.transform = `translateX(${translateX}px)`;
@@ -184,7 +185,7 @@ function slideLeft(){
 function slideRight(){
     if (imageIndex !== numberOfImages){
         imageIndex++;
-        translateX -= 700;
+        translateX -= parseInt(getComputedStyle(longitud).width);
         carouselImage1.style.transform = `translateX(${translateX}px)`;
         carouselImage2.style.transform = `translateX(${translateX}px)`;
         carouselImage3.style.transform = `translateX(${translateX}px)`;
