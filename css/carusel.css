@@ -14,8 +14,6 @@ h1,h2,h3,h4,h5,p,a{
 }
 
 body {
-    padding: 0 35px;
-    min-height: 100vh;
     background: #343F4F;
 }
 
@@ -325,4 +323,91 @@ body {
 .icon-right{
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel img {
+        width: calc(40% / 2);
+    }
+    .carousel2 img {
+        width: calc(40% / 2);
+    }
+
+    .Categorias_Tendencia {
+        display: none;
+
+    }
+    
+    .Categorias_Tendencia2 {
+        display: grid;
+        margin: 0 0 auto;
+        padding: 5em;
+        margin-top: 5em;
+
+    }
+
+    .Categorias_Tendencia2 img{
+        display: grid;
+        margin-top: 30px;
+    }
+
+    .Fotos_Categorias .drc img{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel-head{
+        width: calc(25% / 2);
+    }
+    .carousel-images{
+        width: calc(25% / 2);
+    }
+    
+    .wrapper i:first-child {
+        left: 0px;
+        display: none;
+    }
+    
+    .wrapper i:last-child {
+        right: 0px;
+    }
+    .wrapper2 i:first-child {
+        left: 10px;
+        display: none;
+    }
+    
+    .wrapper2 i:last-child {
+        right: 0px;
+    }
+    .carousel img {
+        width: calc(25% / 2);
+    }
+    .carousel2 img {
+        width: calc(25% / 2);
+    }
+    .Categorias_Tendencia2 {
+        display: grid;
+        margin: 0 0 auto;
+        margin-left: 2em;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .Categorias_Tendencia2 img{
+        display: grid;
+        width: 150px;
+        height: 150px;
+    }
+    .Fotos_Categorias .drc img{
+        margin: auto;
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+    .Fotos_Categorias .izq img{
+        margin: auto;
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+
 }
