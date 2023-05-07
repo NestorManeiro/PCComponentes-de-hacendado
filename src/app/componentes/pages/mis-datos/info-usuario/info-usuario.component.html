@@ -2,7 +2,14 @@
   <div class="izquierda">
     <div class="imagen_usuario">
       <button (click)="Popup_on()">editar</button>
-      <img src="./assets/Img/usuario_chido.png" alt="imagen_Usuario">
+      <ng-container *ngIf="img !== ''; else defaultImage">
+        <img [src]="img" alt="imagen_Usuario" width="150em" height="150em">
+      </ng-container>
+
+      <ng-template #defaultImage>
+        <img src="./assets/Img/usuario_chido.png" alt="imagen_Usuario" width="150em" height="150em">
+      </ng-template>
+
     </div>
     <div class="info_usuario">
       <p class="Nick">{{user}}</p>

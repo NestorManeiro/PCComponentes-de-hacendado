@@ -36,8 +36,8 @@
     <section class="offcanvas-body">
       <hr style="margin-bottom: 5%;"/>
       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/login" data-bs-dismiss="offcanvas">Iniciar sesion</a>
+        <li class="nav-item" *ngIf="!(auth.user | async) || signedOut === true">
+          <a class="nav-link" routerLink="/login" data-bs-dismiss="offcanvas">Iniciar sesión</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"><img src="./assets/Img/user_icon.png" alt="Mi cuenta" width="20px" height="20px" style="margin-right: 5%; margin-bottom: 3%;">Mi cuenta</a>

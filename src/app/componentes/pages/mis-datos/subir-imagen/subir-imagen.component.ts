@@ -9,7 +9,7 @@ import { getDoc } from "firebase/firestore";
 import {user} from "@angular/fire/auth";
 import firebase from "firebase/compat";
 import storage = firebase.storage;
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-subir-imagen',
   templateUrl: './subir-imagen.component.html',
@@ -25,14 +25,16 @@ export class SubirImagenComponent {
   /* variables del usuario*/
 
   nombreUser?: string;
-
+  lastNombre?:string;
+  nombre?:string;
+  img?: string;
 
   //datos de usuario
   card1?: string[] = [];
   //fin Datos usuarios
   //fin variables usuario
   public userFirebase: any;
-  constructor(private imagen:ImagenService, private almacen:AlmacénService,private firestore: Firestore, public auth: AngularFireAuth) {
+  constructor(private router: Router,private imagen:ImagenService, private almacen:AlmacénService,private firestore: Firestore, public auth: AngularFireAuth) {
     this.auth.authState.subscribe(user => {
       console.log(this.actualuser$);
       this.user = user;
@@ -58,6 +60,9 @@ export class SubirImagenComponent {
       console.log(userData);
       console.log(userCard);
       this.nombreUser = userData["usuario"];
+      this.img = userData["imgProfile"];
+      this.lastNombre = userData["LastName"];
+      this.nombre = userData["name"];
       //tarjeta?
       this.card1 = userCard["card1"];
       this.imagen.$card.emit(userCard["card1"]);
@@ -77,11 +82,12 @@ export class SubirImagenComponent {
         console.log(urlImagen);
 
         await setDoc(doc(this.firestore, `Usuarios/${this.user.uid}`), {
-          LastName: this.user.LastName,
+          LastName: this.lastNombre,
           imgProfile: urlImagen,
-          name: this.user.name,
-          usuario: this.user.usuario
+          name: this.nombre,
+          usuario: this.nombreUser,
         });
+        window.location.reload();
       });
     }
   }
