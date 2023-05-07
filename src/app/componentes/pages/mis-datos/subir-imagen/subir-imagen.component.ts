@@ -28,6 +28,8 @@ export class SubirImagenComponent {
   lastNombre?:string;
   nombre?:string;
   img?: string;
+  direc?: string;
+  postal?: string;
 
   //datos de usuario
   card1?: string[] = [];
@@ -63,6 +65,8 @@ export class SubirImagenComponent {
       this.img = userData["imgProfile"];
       this.lastNombre = userData["LastName"];
       this.nombre = userData["name"];
+      this.direc = userData["direction"];
+      this.postal = userData["postal"];
       //tarjeta?
       this.card1 = userCard["card1"];
       this.imagen.$card.emit(userCard["card1"]);
@@ -86,6 +90,8 @@ export class SubirImagenComponent {
           imgProfile: urlImagen,
           name: this.nombre,
           usuario: this.nombreUser,
+          direction: this.direc,
+          postal: this.postal,
         });
         window.location.reload();
       });
