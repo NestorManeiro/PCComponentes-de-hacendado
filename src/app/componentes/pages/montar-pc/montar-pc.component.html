@@ -1,0 +1,131 @@
+<!--JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--JS-->
+
+<header>
+  <script>include("header", "Componentes/navbar.html")</script>
+</header>
+
+<!-- Main -->
+<main class=".bg-dark container">
+  <form>
+    <table id="componentesTable" class="table table-bordered mt-5 ">
+      <thead>
+      <tr>
+        <th scope="col">Componente</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+      </tr>
+      <tr>
+        <th><h6>Procesadores:</h6></th>
+        <th>
+          <select class="form-control" id="procesador" (change)="onProcesadorChange($event)">
+            <option *ngFor="let procesador of procesadores$ | async" [value]="procesador.Modelo">
+              {{procesador.Modelo}} - {{procesador.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+          <th>{{selectedProcesador?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th><h6>Placa Base:</h6></th>
+        <th>
+          <select class="form-control" id="placa-base" (change)="onPlacaBaseChange($event)">
+            <option *ngFor="let placaBase of placasBase$ | async" [value]="placaBase.Modelo">
+              {{placaBase.Modelo}} - {{placaBase.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+        <th>{{selectedPlacaBase?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th><h6>Disco duro:</h6></th>
+        <th>
+          <select class="form-control" id="disco-duro" (change)="onDiscoDuroChange($event)">
+            <option *ngFor="let discoDuro of discoDuro$ | async" [value]="discoDuro.Modelo">
+              {{discoDuro.Modelo}} - {{discoDuro.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+        <th>{{selectedDiscoDuro?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th><h6>Caja:</h6></th>
+        <th>
+          <select class="form-control" id="caja" (change)="onCajaChange($event)">
+            <option *ngFor="let caja of cajas$ | async" [value]="caja.Modelo">
+              {{caja.Modelo}} - {{caja.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+        <th>{{selectedCaja?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th><h6>RAM:</h6></th>
+        <th>
+          <select class="form-control" id="ram" (change)="onRAMChange($event)">
+            <option *ngFor="let ram of rams$ | async" [value]="ram.Modelo">
+              {{ram.Modelo}} - {{ram.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+        <th>{{selectedRam?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th><h6>Fuente de alimentación:</h6></th>
+        <th>
+          <select class="form-control" id="fuente" (change)="onFuenteAlimentacionChange($event)">
+            <option *ngFor="let fuente of fuentes$ | async" [value]="fuente.Modelo">
+              {{fuente.Modelo}} - {{fuente.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+        <th>{{selectedFuente?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th><h6>Tarjeta gráfica:</h6></th>
+        <th>
+          <select class="form-control" id="tarjeta-grafica" (change)="onTarjetaGraficaChange($event)">
+            <option *ngFor="let tarjetaGrafica of tarjetasGraficas$ | async" [value]="tarjetaGrafica.Modelo">
+              {{tarjetaGrafica.Modelo}} - {{tarjetaGrafica.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+        <th>{{selectedTarjetaGrafica?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th><h6>Refrigeración CPU:</h6></th>
+        <th>
+          <select class="form-control" id="refrigeracion-cpu" (change)="onRefrigeracionCPUChange($event)">
+            <option *ngFor="let refrigeracionCpu of refrigeraciones$ | async" [value]="refrigeracionCpu.Modelo">
+              {{refrigeracionCpu.Modelo}} - {{refrigeracionCpu.Precio.toFixed(2)}} €
+            </option>
+          </select>
+        </th>
+        <th>{{selectedRefrigeracion?.Precio.toFixed(2)}} €</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>
+          <h6>Precio Final:</h6>
+        </th>
+        <th><p>{{calcularPrecioTotal() | number:'1.2-2'}} €</p></th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+
+    </table>
+
+  </form>
+</main>

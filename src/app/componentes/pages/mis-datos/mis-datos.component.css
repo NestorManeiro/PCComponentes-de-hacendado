@@ -1,0 +1,13 @@
+.Mis_datos{
+  width: 100%;
+  height: 100%;
+}
+.subir_imagen_popup{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+

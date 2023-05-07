@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pccomponentes-de-hacendado": {
+      "hosting": {
+        "untitled": [
+          "pccomponentes-de-hacendado"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pccomponentes-de-hacendado"
+  }
+}

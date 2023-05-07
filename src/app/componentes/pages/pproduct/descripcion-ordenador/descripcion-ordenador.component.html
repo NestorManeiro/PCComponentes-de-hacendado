@@ -1,0 +1,103 @@
+
+<main class="bg-dark container">
+  <div class="container" id="div-pGrande">
+    <div class="pccom-acc-to-tab horizontal" >
+      <!-- style="display: block; width: 100%; margin: 0px;" -->
+      <ul class="tab-list">
+        <li id="article-features" class="article-features resp-tab-item" (click)="mostrar_features()">
+          Caracteristicas
+        </li>
+        <li id="article-comments" class="article-features resp-tab-item" (click)="mostrar_comments()">
+          Opiniones
+        </li>
+        <li id="article-videos" class="article-features resp-tab-item" (click)="mostrar_videos()">
+          Videos/Reviws
+        </li>
+        <li id="article-questions" class="article-features resp-tab-item" (click)="mostrar_questions()">
+          Preguntas
+        </li>
+      </ul>
+      <div id="features" *ngIf="features">
+        <p id="p1"> {{this.arrayDatos![5]}} </p>
+        <p id="p2">{{this.arrayDatos![6]}}</p>
+        <p id="p3">{{this.arrayDatos![7]}}</p>
+        <p id="p4">{{this.arrayDatos![8]}}</p>
+        <p id="p5">{{this.arrayDatos![9]}}</p>
+        <p id="p6">{{this.arrayDatos![10]}}</p>
+        <p id="p7">{{this.arrayDatos![11]}}</p>
+        <h2>Características:</h2>
+        <ul>
+          <li><strong>TRI FROZR 2: </strong>TRI FROZR 2 ofrece el equilibrio perfecto entre frescura
+            temperaturas y ventiladores silenciosos durante interminables sesiones de juego</li>
+          <li><strong>VENTILADOR TORX 4.0: </strong>Una obra maestra del trabajo en equipo, las aspas del
+            ventilador funcionan en pares para crear niveles sin precedentes de presión de aire
+            concentrada.</li>
+          <li><strong>Control de flujo de aire: </strong>No se preocupe, Airflow Control guía el aire
+            exactamente hacia donde debe ser para un enfriamiento máximo.</li>
+          <li><strong>Tubo central: </strong>Los tubos de calor mecanizados con precisión garantizan un
+            contacto y una distribución máximos calor a lo largo de toda la longitud del disipador de
+            calor.</li>
+          <li><strong>Control de flujo de aire: </strong>No se preocupe, Airflow Control guía el aire
+            exactamente hacia donde debe ser para un enfriamiento máximo.</li>
+          <li><strong>Zero Frozr: </strong> es la calma antes de la tormenta, manteniendo a los fanáticos
+            quietos y manteniendo silencio hasta que se necesite enfriar.</li>
+          <li><strong>Placa posterior de aluminio: </strong>Las almohadillas térmicas debajo de la
+            resistente placa posterior de metal brindan refrigeración adicional.</li>
+          <li><strong>Luz mística: </strong>Mystic Light le brinda un control completo de la iluminación
+            RGB para Dispositivos MSI y productos RGB compatibles.</li>
+          <li><strong>Centro MSI: </strong>El exclusivo software MSI Center te permite monitorear, ajustar
+            y optimizar los productos MSI en tiempo real.</li>
+        </ul>
+        <h2>Especificaciones</h2>
+        <ul>
+          <li>Memory 12GB GDDR6X</li>
+          <li>Motor Gráfico NVIDIA® GeForce RTX™ 3080</li>
+          <li>Bus Standard PCI Express® Gen 4</li>
+          <li>Interfaz de Memoria 384-bit</li>
+          <li>Velocidad de Memoria 19 Gbps</li>
+          <li>Maximum Displays 4</li>
+          <li>Power consumption (W) 390W</li>
+          <li>Soporte HDCP Y</li>
+          <li>Output</li>
+          <li>DisplayPort x 3 (v1.4)</li>
+          <li>HDMI x 1 (Supports 4K@120Hz as</li>
+          <li>specified in HDMI 2.1)</li>
+          <li>Recommended Power Supply (W) TBD</li>
+          <li>Virtual Reality Ready Y</li>
+          <li>Digital Maximum Resolution 7680x4320</li>
+          <li>Power Connectors 8-pin x 3</li>
+          <li>Versión Soportada de DirectX 12 API</li>
+          <li>Versión Soportada de OpenGL 4.6</li>
+          <li>Dimensiones de Tarjeta(mm) 323 x 140 x 56mm</li>
+          <li>Peso 1566g/2351g</li>
+        </ul>
+      </div>
+      <div id="comments" *ngIf="comments">
+        <p>Aquí los comentarios</p>
+      </div>
+      <div id="videos" *ngIf="videos">
+        <h2>Reviews</h2>
+        <p>No tenemos ninguna Review <b>¿A qué esperas? ¡Mándanos la tuya!</b></p>
+        <a id="new-article-review" class="btn btn-primary-outline">Insertar nueva review</a>
+        <br><br><br><br><br>
+        <h2>Videos</h2>
+        <p>No tenemos ningún video <b>¿A qué esperas? ¡Mándanos la tuya!</b></p>
+        <a id="new-article-video" class="btn btn-primary-outline">Insertar nuevo video</a>
+        <br><br><br><br><br>
+      </div>
+      <div id="questions" *ngIf="questions">
+        <p class="text-xs-center soft-text">
+          Los clientes son los mejores expertos.
+          <br> ¡Pregúntales lo que quieras!
+        </p>
+        <p class="text-xs-center soft-text"><span class="naranja">0</span> Preguntas | <span
+          class="naranja">0</span> Respuestas
+        </p>
+        <p class="text-xs-center">
+          <button id="new-article-question" class="btn btn-primary btn-lg">Hacer Pregunta</button>
+        </p>
+        <br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+</main>

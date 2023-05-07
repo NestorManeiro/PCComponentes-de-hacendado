@@ -1,0 +1,21 @@
+<main class="bg-dark">
+
+  <div *ngIf="fase_pago == 0">
+    <app-paso1></app-paso1>
+  </div>
+  <div *ngIf="fase_pago == 1">
+    <app-paso2></app-paso2>
+  </div>
+  <div *ngIf="fase_pago == 2">
+    <app-paso3></app-paso3>
+  </div>
+  <div *ngIf="fase_pago == 3">
+    <app-paso4></app-paso4>
+  </div>
+  <div *ngIf="fase_pago == 4">
+    <app-paso5></app-paso5>
+  </div>
+  <button class="continue-button orange-button" (click)="avanzar()">
+    Continuar
+  </button>
+</main>

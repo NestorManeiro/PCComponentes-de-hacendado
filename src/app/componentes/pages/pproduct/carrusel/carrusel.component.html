@@ -1,0 +1,92 @@
+<body onload="changeActiveSlide('mySlides', 0, 0)" class="bg-dark">
+<main class="bg-dark container ">
+  <div class="container">
+    <div class="row">
+      <div class="col"> <!-- Columna 1 izquierda -->
+
+        <div class="slideshow-container d-flex justify-content">
+          <a class="prev z-3" onclick="plusSlides('mySlides',-1)">&#10094;</a>
+
+          <div class="mySlides fader mx-auto">
+            <div class="numbertext">1 / 6</div>
+            <img class="" src="./assets/Img/gigachad.jpg" width="300" height="300" alt="">
+          </div>
+
+          <div class="mySlides fade mx-auto">
+            <div class="numbertext">2 / 6</div>
+            <img src="./assets/Img/Gigachad2.webp" width="300" height="300" alt="">
+          </div>
+
+          <div class="mySlides fade mx-auto">
+            <div class="numbertext">3 / 6</div>
+            <img src="./assets/Img/gigachad3.webp" width="300" height="300" alt="">
+          </div>
+
+          <div class="mySlides fade mx-auto">
+            <div class="numbertext">4 / 6</div>
+            <img src="./assets/Img/gigachad4.jpg" width="300" height="300" alt="">
+          </div>
+
+          <div class="mySlides fade mx-auto">
+            <div class="numbertext">5 / 6</div>
+            <img src="./assets/Img/gigachad5.jpg" width="300" height="300" alt="">
+          </div>
+
+          <div class="mySlides fade mx-auto">
+            <div class="numbertext">6 / 6</div>
+            <img src="./assets/Img/Gigachad6.webp" width="300" height="300" alt="">
+          </div>
+
+
+          <a class="next" onclick="plusSlides('mySlides',1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <img src="./assets/Img/Gaming.png" class="mySlides-dot dot" alt=""
+               onclick="changeActiveSlide('mySlides', 0, 0)">
+          <img src="./assets/Img/Gaming.png" class="mySlides-dot dot" alt=""
+               onclick="changeActiveSlide('mySlides', 1, 0)">
+          <img src="./assets/Img/Gaming.png" class="mySlides-dot dot" alt=""
+               onclick="changeActiveSlide('mySlides', 2, 0)">
+          <img src="./assets/Img/Gaming.png" class="mySlides-dot dot" alt=""
+               onclick="changeActiveSlide('mySlides', 3, 0)">
+          <img src="./assets/Img/Gaming.png" class="mySlides-dot dot" alt=""
+               onclick="changeActiveSlide('mySlides', 4, 0)">
+        </div>
+
+        <!-- Config slider -->
+
+      </div>
+      <div class="col"> <!-- Columna 2 derecha -->
+        <div id="main-description">
+          <p id="product-name">Nombre <strong>{{this.arrayDatos![0]}}</strong></p>
+          <div id="product-price">Precio: {{this.arrayDatos![1]}}</div>
+          <div id="product-short-description">
+            <p id="brand">Marca: {{this.arrayDatos![2]}}</p>
+            <p id="shipment">Envío: {{this.arrayDatos![3]}}</p>
+            <p id="finance">Financiacion {{this.arrayDatos![4]}} </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="main-description-button btn btn-outline-warning orange-button"
+                      onclick="">
+                <img class="img-button " src="./assets/Img/añadir-carrito.png" alt="Añadir al carrito">
+                <span>Añadir al carrito</span>
+              </button>
+            </div>
+            <div class="col">
+              <button class="main-description-button btn btn-outline-warning orange-button"
+                      onclick="">
+                <img class="img-button" src="./assets/Img/pagar-inmediato.png" alt="Comprar ahora">
+                <span>Añadir al carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+
+</main>
+</body>

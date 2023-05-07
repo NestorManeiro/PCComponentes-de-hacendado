@@ -1,0 +1,36 @@
+.contenido{
+  width: 500px;
+  height: 250px;
+  background-color: #B86707;
+  margin-top: 5em;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.top{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.bottom{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.bottom button{
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+#inputFile{
+  display:none;
+}
+.inputFile{
+  cursor: pointer;
+  user-select: none;
+}

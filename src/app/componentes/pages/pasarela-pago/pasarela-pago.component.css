@@ -1,0 +1,23 @@
+.continue-button{
+  display: inline-flex;
+  position: relative;
+  padding: 0.5rem 9px;
+  outline: 0px;
+  text-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: "Open Sans", open-sans, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  border-radius: 4px;
+  background-color: #2A2C29;
+  margin-top: 5%;
+  float: right;
+}
+
+

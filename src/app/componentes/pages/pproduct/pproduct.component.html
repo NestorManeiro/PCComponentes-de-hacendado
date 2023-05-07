@@ -1,0 +1,8 @@
+<app-carrusel [arrayDatos] = "arrayDatos" ></app-carrusel>
+<div *ngIf="versionMovil">
+  <app-descripcion-movil ></app-descripcion-movil>
+</div>
+<div *ngIf="!versionMovil">
+  <app-descripcion-ordenador [arrayDatos] = "arrayDatos" ></app-descripcion-ordenador>
+</div>
+

@@ -1,0 +1,144 @@
+#prueba{
+  width: 70%;
+}
+
+.tablitas{
+  max-width: 13.375rem;
+  padding: 1rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  flex: 1 1 0%;
+  box-shadow: #A7C3BC 0px -4px 0px inset;
+}
+
+.container_col{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1.5rem;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.container_col_direction{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1.5rem;
+  border: 2px solid black;
+}
+
+.add_direction_button{
+  background-color: #2A2C29;
+  display: inline-flex;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.right{
+  float: right;
+  margin-right: 1%;
+
+}
+
+.continue-button{
+  display: inline-flex;
+  position: relative;
+  padding: 0.5rem 9px;
+  outline: 0px;
+  text-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: "Open Sans", open-sans, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  border-radius: 4px;
+  background-color: #2A2C29;
+  margin-top: 5%;
+  float: right;
+
+}
+
+.add_direction_button{
+  background-color: #2A2C29;
+  display: inline-flex;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#button_text_add{
+  text-align: center;
+
+}
+
+#button_text_add{
+  text-align: center;
+
+}
+
+.direccion{
+  display: flex;
+
+  border: 2px solid black;
+}
+#prueba2 {
+  width: 29%;
+  padding-left: 5%;
+}
+
+#lineas{
+  border-bottom: 1px dashed #A7C3BC ;
+}
+
+h5{
+  color: #A7C3BC;
+}
+
+
+.container_col{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1.5rem;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.container_col_direction{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1.5rem;
+  border: 2px solid black;
+}
+h6{
+  color: #A7C3BC;
+  font-size: 20px;
+}
+
+#shipment-directions{
+  display: inline-flex;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+  /*Pasarela pago */
+  /*Paso 2 */
+  #prueba2{
+    width: 29%;
+    padding-left: 0%;
+  }
+
+  .right{
+    float: none;
+  }
+
+}
