@@ -81,6 +81,8 @@ export class SubirImagenComponent {
           imgProfile: urlImagen,
           name: this.user.name,
           usuario: this.user.usuario
+          direction:,
+          postal:,
         });
       });
     }
