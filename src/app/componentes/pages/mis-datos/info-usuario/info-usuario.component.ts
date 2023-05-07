@@ -8,6 +8,7 @@ import {ImagenService} from "../../../../service/imagen.service";
 })
 export class InfoUsuarioComponent {
   @Input() user?:string;
+  @Input() img?:string;
   constructor(private imagen:ImagenService) {
     console.log(this.user);
   }

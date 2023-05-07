@@ -26,6 +26,7 @@ export class MisDatosComponent implements OnInit{
   /* variables del usuario*/
 
   nombreUser?: string;
+  img?: string;
 
 
   //datos de usuario
@@ -65,6 +66,7 @@ export class MisDatosComponent implements OnInit{
       console.log(userData);
       console.log(userCard);
       this.nombreUser = userData["usuario"];
+      this.img = userData["imgProfile"];
       //tarjeta?
       this.card1 = userCard["card1"];
       this.imagen.$card.emit(userCard["card1"]);
