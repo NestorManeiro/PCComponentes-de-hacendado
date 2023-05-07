@@ -57,6 +57,7 @@ form.addEventListener("submit", async (e) => {
         });
 
         alert('Usuario creado correctamente: ' + usuario.value);
+        window.location.href = "/";
       } catch (error) {
         console.log(error.message);
         console.log(error.code);

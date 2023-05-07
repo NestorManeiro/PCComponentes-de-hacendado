@@ -11,6 +11,8 @@ signInForm.addEventListener("submit", async e => {
     const credentials = await signInWithEmailAndPassword(auth, email.value, password.value)
     alert('Bienvenido:  '+email.value)
     console.log(credentials)
+    window.location.href = "/";
+
   } catch (error) {
     console.log("error:", error)
 
